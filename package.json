@@ -1,0 +1,10 @@
+{
+    "name": "gulp-sass-import-json",
+    "version": "0.0.2",
+    "main": "index.js",
+    "dependencies": {
+        "gulp-util": "^3.0.4",
+        "lodash": "^3.10.1",
+        "through2": "^0.6.5"
+    }
+}
