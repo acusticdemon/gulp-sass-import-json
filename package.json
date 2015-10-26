@@ -2,9 +2,24 @@
     "name": "gulp-sass-import-json",
     "version": "0.0.2",
     "main": "index.js",
+    "author": {
+        "name": "Renat Gafarov"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/acusticdemon/gulp-sass-import-json.git"
+    },
+    "homepage": "https://github.com/acusticdemon/gulp-sass-import-json",
     "dependencies": {
         "gulp-util": "^3.0.4",
         "lodash": "^3.10.1",
         "through2": "^0.6.5"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "chai": "*"
+    },
+    "scripts": {
+        "test": "mocha test/index.js"
     }
 }
