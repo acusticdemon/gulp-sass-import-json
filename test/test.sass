@@ -1,0 +1,10 @@
+@import 'colors.json'
+@import 'sizes.json'
+
+.message
+    .error
+        color: map-get($colors, error)
+        font-size: $size-l
+    .success
+        color: map-get($colors, success)
+        font-size: $size-m

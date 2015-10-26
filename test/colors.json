@@ -1,0 +1,11 @@
+{
+    "colors": {
+        "error": "#f00",
+        "success": "#0f0",
+        "light": ["#fff", "#eee", "#ccc"],
+        "dark": {
+            "black": "#000",
+            "smog": "#666"
+        }
+    }
+}
