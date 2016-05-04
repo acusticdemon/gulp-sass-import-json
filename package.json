@@ -1,25 +1,38 @@
 {
-    "name": "gulp-sass-import-json",
-    "version": "0.0.3",
-    "main": "index.js",
-    "author": {
-        "name": "Renat Gafarov"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/acusticdemon/gulp-sass-import-json.git"
-    },
-    "homepage": "https://github.com/acusticdemon/gulp-sass-import-json",
-    "dependencies": {
-        "gulp-util": "^3.0.4",
-        "lodash": "^3.10.1",
-        "through2": "^0.6.5"
-    },
-    "devDependencies": {
-        "mocha": "*",
-        "chai": "*"
-    },
-    "scripts": {
-        "test": "mocha test/index.js"
-    }
+  "name": "gulp-sass-import-json",
+  "version": "0.0.5",
+  "main": "index.js",
+  "author": "Renat Gafarov",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acusticdemon/gulp-sass-import-json.git"
+  },
+  "homepage": "https://github.com/acusticdemon/gulp-sass-import-json",
+  "dependencies": {
+    "gulp-util": "^3.0.4",
+    "lodash": "^3.10.1",
+    "through2": "^0.6.5"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
+  },
+  "scripts": {
+    "test": "mocha test/index.js"
+  },
+  "description": "Gulp plugin for sass",
+  "bugs": {
+    "url": "https://github.com/acusticdemon/gulp-sass-import-json/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "gulp",
+    "sass",
+    "scss",
+    "json",
+    "import"
+  ],
+  "license": "ISC"
 }
