@@ -39,6 +39,10 @@ module.exports = function (options) {
 
                 var importJsonContent = fs.readFileSync(importJsonPath).toString();
 
+                if(!options) {
+                    options = true;
+                }
+
                 compiledJsonContent = jsonToSass(importJsonContent, options.isScss || false);
 
                 jsonCache[importJsonPath] = compiledJsonContent;
