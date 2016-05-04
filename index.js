@@ -4,7 +4,7 @@ var fs          = require('fs');
 var gutil       = require('gulp-util');
 var through     = require('through2');
 
-var jsonToSass  = require('lib/json-to-sass');
+var jsonToSass  = require('./lib/json-to-sass');
 
 var importJsonRx = /@import\s*['"]?(.*?\.json)['"]?/gi;
 var jsonCache = {};
@@ -38,6 +38,10 @@ module.exports = function (options) {
                 }
 
                 var importJsonContent = fs.readFileSync(importJsonPath).toString();
+
+                if(!options) {
+                    options = true;
+                }
 
                 compiledJsonContent = jsonToSass(importJsonContent, options.isScss || false);
 
