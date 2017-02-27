@@ -1,6 +1,6 @@
 {
   "name": "gulp-sass-import-json",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "main": "index.js",
   "author": "Renat Gafarov",
   "repository": {
