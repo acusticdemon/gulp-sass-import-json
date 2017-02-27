@@ -3,6 +3,7 @@
 var fs          = require('fs');
 var gutil       = require('gulp-util');
 var through     = require('through2');
+var path        = require('path');
 
 var jsonToSass  = require('./lib/json-to-sass');
 
@@ -30,7 +31,7 @@ module.exports = function (options) {
         try {
             var content = file.contents.toString();
             var contentWithImports = content.replace(importJsonRx, function (noop, fileName) {
-                var importJsonPath = file.base + fileName;
+                var importJsonPath = fileName.indexOf('/') === 0 ? fileName : path.dirname(file.path) + '/' + fileName;
 
                 var compiledJsonContent = jsonCache[importJsonPath];
                 if(compiledJsonContent) {
