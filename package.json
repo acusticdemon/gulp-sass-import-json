@@ -21,7 +21,7 @@
   },
   "scripts": {
     "test": "mocha test/index.js",
-    "postversion": "git push origin dev && git push --tags"
+    "postversion": "git push origin master && git push --tags"
   },
   "description": "Gulp plugin for sass",
   "bugs": {
