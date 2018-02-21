@@ -1,2 +1,4 @@
 .idea
 node_modules
+test/dest
+package-lock.json

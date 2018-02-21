@@ -1,14 +1,14 @@
 'use strict';
 
-var fs          = require('fs');
-var gutil       = require('gulp-util');
-var through     = require('through2');
-var path        = require('path');
+const fs          = require('fs');
+const gutil       = require('gulp-util');
+const through     = require('through2');
+const path        = require('path');
 
-var jsonToSass  = require('./lib/json-to-sass');
+const jsonToSass  = require('./lib/json-to-sass');
 
-var importJsonRx = /@import\s*['"]?(.*?\.json)['"]?/gi;
-var jsonCache = {};
+const importJsonRx = /@import\s*['"]?(.*?\.json)['"]?/gi;
+const jsonCache = {};
 
 /**
  * @param {Object|null} options
@@ -29,16 +29,16 @@ module.exports = function (options) {
         }
 
         try {
-            var content = file.contents.toString();
-            var contentWithImports = content.replace(importJsonRx, function (noop, fileName) {
-                var importJsonPath = fileName.indexOf('/') === 0 ? fileName : path.dirname(file.path) + '/' + fileName;
+            let content = file.contents.toString();
+            let contentWithImports = content.replace(importJsonRx, function (noop, fileName) {
+                let importJsonPath = fileName.indexOf('/') === 0 ? fileName : path.dirname(file.path) + '/' + fileName;
 
-                var compiledJsonContent = jsonCache[importJsonPath];
+                let compiledJsonContent = jsonCache[importJsonPath];
                 if(compiledJsonContent) {
                     return compiledJsonContent;
                 }
 
-                var importJsonContent = fs.readFileSync(importJsonPath).toString();
+                let importJsonContent = fs.readFileSync(importJsonPath).toString();
 
                 if(!options) {
                     options = true;

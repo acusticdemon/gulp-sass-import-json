@@ -14,11 +14,14 @@
     "through2": "^0.6.5"
   },
   "devDependencies": {
-    "mocha": "*",
-    "chai": "*"
+    "chai": "*",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "mocha": "*"
   },
   "scripts": {
-    "test": "mocha test/index.js"
+    "test": "mocha test/index.js",
+    "postversion": "git push origin dev && git push --tags"
   },
   "description": "Gulp plugin for sass",
   "bugs": {
