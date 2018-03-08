@@ -46,7 +46,9 @@ module.exports = function (options) {
 
                 compiledJsonContent = jsonToSass(importJsonContent, options.isScss || false);
 
-                jsonCache[importJsonPath] = compiledJsonContent;
+                if (options.cache === true || options.cache === undefined) {
+                    jsonCache[importJsonPath] = compiledJsonContent;
+                }
                 return compiledJsonContent;
             });
 
