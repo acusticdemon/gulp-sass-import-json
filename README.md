@@ -9,7 +9,7 @@ npm i gulp-sass-import-json
 
 ## Configuration
 ### sassImportJson([options])
-#### options.isSass
+#### options.isSсss
 Type: `Boolean`
 
 Set it to `true` if you want to have SCCS syntax. Otherwise it will be Sass syntax.
