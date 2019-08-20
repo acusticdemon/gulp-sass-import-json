@@ -2,3 +2,5 @@
 node_modules
 test/dest
 package-lock.json
+/.vs/slnx.sqlite
+/.vs/gulp-sass-import-json/config/applicationhost.config

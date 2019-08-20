@@ -1,7 +1,7 @@
 'use strict';
 
 const fs          = require('fs');
-const gutil       = require('gulp-util');
+const PluginError = require('gulp-util');
 const through     = require('through2');
 const path        = require('path');
 
@@ -24,7 +24,8 @@ module.exports = function (options) {
         }
 
         if (file.isStream()) {
-            cb(new gutil.PluginError('gulp-sass-import-json', 'Streaming not supported'));
+             
+            cb(new PluginError('gulp-sass-import-json', 'Streaming not supported'));
             return;
         }
 
@@ -56,7 +57,7 @@ module.exports = function (options) {
 
             this.push(file);
         } catch (err) {
-            this.emit('error', new gutil.PluginError('gulp-sass-import-json', err));
+            this.emit('error', new PluginError('gulp-sass-import-json', err));
         }
 
         cb();
