@@ -10,7 +10,7 @@
   "homepage": "https://github.com/acusticdemon/gulp-sass-import-json",
   "dependencies": {
     "gulp-util": "^3.0.4",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.19",
     "through2": "^0.6.5"
   },
   "devDependencies": {
