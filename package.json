@@ -1,13 +1,13 @@
 {
-  "name": "@sayhellogmbh/gulp-sass-import-json",
+  "name": "gulp-sass-import-json",
   "version": "1.0.2",
   "main": "index.js",
-  "author": "Say Hello GmbH",
+  "author": "Renat Gafarov",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SayHelloGmbH/gulp-sass-import-json.git"
+    "url": "git+https://github.com/acusticdemon/gulp-sass-import-json.git"
   },
-  "homepage": "https://github.com/SayHelloGmbH/gulp-sass-import-json",
+  "homepage": "https://github.com/acusticdemon/gulp-sass-import-json",
   "dependencies": {
     "gulp-util": "^3.0.4",
     "lodash": "^3.10.1",
@@ -25,7 +25,7 @@
   },
   "description": "Gulp plugin for sass",
   "bugs": {
-    "url": "https://github.com/SayHelloGmbH/gulp-sass-import-json/issues"
+    "url": "https://github.com/acusticdemon/gulp-sass-import-json/issues"
   },
   "directories": {
     "test": "test"
