@@ -53,3 +53,7 @@ div.error
     "medium": "12px"
 }
 ```
+
+## Note
+Using a JSON file in which the value of an entry is set to a percentage character (`%`) throws an error. 
+These percentage characters cannot be mapped to SCSS and will be replaced with `null`.
