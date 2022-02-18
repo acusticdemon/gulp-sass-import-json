@@ -37,5 +37,8 @@
         "json",
         "import"
     ],
-    "license": "ISC"
+    "license": "ISC",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    }
 }
