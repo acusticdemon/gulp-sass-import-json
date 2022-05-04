@@ -1,41 +1,44 @@
 {
-  "name": "gulp-sass-import-json",
-  "version": "1.0.2",
-  "main": "index.js",
-  "author": "Renat Gafarov",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/acusticdemon/gulp-sass-import-json.git"
-  },
-  "homepage": "https://github.com/acusticdemon/gulp-sass-import-json",
-  "dependencies": {
-    "gulp-util": "^3.0.4",
-    "lodash": "^3.10.1",
-    "through2": "^0.6.5"
-  },
-  "devDependencies": {
-    "chai": "*",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0",
-    "mocha": "*"
-  },
-  "scripts": {
-    "test": "mocha test/index.js",
-    "postversion": "git push origin master && git push --tags"
-  },
-  "description": "Gulp plugin for sass",
-  "bugs": {
-    "url": "https://github.com/acusticdemon/gulp-sass-import-json/issues"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "keywords": [
-    "gulp",
-    "sass",
-    "scss",
-    "json",
-    "import"
-  ],
-  "license": "ISC"
+    "name": "@sayhellogmbh/gulp-sass-import-json",
+    "version": "1.1.1",
+    "main": "index.js",
+    "author": "Mark Howells-Mead",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SayHelloGmbH/gulp-sass-import-json.git"
+    },
+    "homepage": "https://github.com/SayHelloGmbH/gulp-sass-import-json",
+    "dependencies": {
+        "gulp-util": "^3.0.8",
+        "lodash": "^4.17.21",
+        "through2": "^4.0.2"
+    },
+    "devDependencies": {
+        "chai": "*",
+        "gulp": "^4.0.2",
+        "gulp-sass": "^5.1.0",
+        "mocha": "*"
+    },
+    "scripts": {
+        "test": "mocha test/index.js",
+        "postversion": "git push origin master && git push --tags"
+    },
+    "description": "Gulp plugin for sass",
+    "bugs": {
+        "url": "https://github.com/SayHelloGmbH/gulp-sass-import-json/issues"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "keywords": [
+        "gulp",
+        "sass",
+        "scss",
+        "json",
+        "import"
+    ],
+    "license": "ISC",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    }
 }
